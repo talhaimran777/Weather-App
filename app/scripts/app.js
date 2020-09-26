@@ -1,1 +1,3 @@
-alert('Making a weather app');
+
+const apiKey = 'DNIYlR9kBJZDZZy0TYGXh0nULOsdhOzO';
+
