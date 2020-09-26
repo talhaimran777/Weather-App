@@ -8,13 +8,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/style.css">
+
+
     <title>Weather App</title>
   </head>
   <body>
-    <h1>Building a weather app</h1>
-    <p>With Bootstrap</p>
+
+    <div class="wrapper mx-auto py-4">
+      <h1 class = "text-center text-muted">Weather Application</h1>
+      <p class = "text-center text-muted">Just search for a location</p>
+
+      <form action="/submit" class="mb-4">
+        <input type="text" placeholder="search" class="form-control form-control-lg">
+      </form>
+
+      <div class="card mx-auto text-center" style="width: 22.3rem;">
+        <div class="card__img">
+          <img src="./img/day.jpg" class="card-img-top" alt="...">
+        </div>
+        
+        <div class="card-body">
+          <h4>City Name</h4>
+          <p>Weather Condition</p>
+
+          <h1 class="display-4">Temp</h1>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
