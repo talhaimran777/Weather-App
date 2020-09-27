@@ -22,22 +22,22 @@
 
     <div class="wrapper mx-auto py-4">
       <h1 class = "text-center text-muted">Weather Application</h1>
-      <p class = "text-center text-muted">Just search for a location</p>
 
-      <form action="/submit" class="mb-4">
-        <input type="text" placeholder="search" class="form-control form-control-lg">
+      <form class="mb-4 text-center">
+        <label class = "text-muted" for="city">Just search for a location</label>
+        <input type="text" placeholder="search" class="form-control form-control-lg" name="city">
       </form>
 
-      <div class="card mx-auto text-center" style="width: 22.3rem;">
+      <div id = "card" class="card mx-auto text-center" style="width: 22.3rem;">
         <div class="card__img">
           <img src="../img/day.jpg" class="card-img-top" alt="...">
         </div>
         
         <div class="card-body">
-          <h4>City Name</h4>
-          <p>Weather Condition</p>
+          <h2 id = "city">City Name</h2>
+          <p id = 'condition'>Weather Condition</p>
 
-          <h1 class="display-4">Temp</h1>
+          <h1 id = "temp" class="display-4">Temp<span>&deg;C</span> </h1>
         </div>
       </div>
 
@@ -61,6 +61,7 @@
 
 
     <!-- My scripts -->
+    <script src="./scripts/forecast.js"></script>
     <script src="./scripts/manipulate.js"></script>
   </body>
 </html>
